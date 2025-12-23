@@ -1,0 +1,32 @@
+# === 🚨 核心安全 (绝对不能传) ===
+.env
+.DS_Store
+
+# === 🐍 Python 垃圾 ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.pytest_cache/
+
+# === 💾 数据文件 (体积大，不传) ===
+data/raw_pdfs/*
+!data/raw_pdfs/.gitkeep
+data/indices/*
+!data/indices/.gitkeep
+data/metadata/subset.csv
+# 注意：保留 questions.json 方便别人测试
+# !data/metadata/questions.json
+
+# === 📉 运行结果与缓存 ===
+outputs/*
+!outputs/.gitkeep
+debug_data/
+*.log
+
+# === IDE 配置 ===
+.idea/
+.vscode/
